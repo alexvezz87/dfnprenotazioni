@@ -2,9 +2,11 @@
 # Theme GitIgnore - Custom Theme Repository
 # ==========================================
 
-# Composer Dependencies (if any)
+# Composer
 /vendor/
+composer.phar
 composer.lock
+composer.json
 
 # IDE & Editor Settings
 .vscode/
@@ -30,3 +32,20 @@ Desktop.ini
 *.log
 error_log
 functions_backup.php
+
+# Testing, Unit Tests & Coverage
+/tests/
+/.phpunit.cache/
+.phpunit.result.cache
+/coverage/
+/html/
+clover.xml
+junit.xml
+coverage.xml
+phpunit.xml
+phpunit.xml.dist
+
+# PHPStan & Static Analysis
+/.phpstan.cache/
+phpstan.neon
+phpstan-baseline.neon
